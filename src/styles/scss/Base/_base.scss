@@ -1,0 +1,10 @@
+@import 'base.settings';
+@import 'base.fonts';
+@import 'base.palette';
+@import 'base.theme';
+@import 'base.mixins';
+
+body {
+  // Set default font weights
+  font-weight: $font-weight-normal;
+}

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+.board {
+  font-family: "Permanent Marker", cursive;
+}
+
+/* Coolors Exported Palette - coolors.co/5dfdcb-7cc6fe-f4faff-8789c0-08090a */
+/* HSL */
+/* RGB */
+html {
+  background: #08090a;
+  color: #f4faff;
+}
+
+body {
+  font-weight: 400;
+}
+
+div {
+  width: 100%;
+  box-shadow: 0 4px 0 0 #f4faff;
+  height: 45px;
+  text-align: center;
+  color: #f4faff;
+  background-color: #08090a;
+}
+
+/*# sourceMappingURL=navbar.css.map */

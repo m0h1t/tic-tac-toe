@@ -1,0 +1,10 @@
+@import 'Base/base';
+
+div {
+  width: 100%;
+  box-shadow: 0 4px 0 0 $color3;
+  height: 45px;
+  text-align: center;
+  color: $color3;
+  background-color: $color5;
+}
