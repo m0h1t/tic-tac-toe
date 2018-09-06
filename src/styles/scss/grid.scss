@@ -1,0 +1,49 @@
+@import 'Base/base';
+
+.player1GridBlock {
+  @include playerGridStyle($player1Color);
+}
+
+.player2GridBlock {
+  @include playerGridStyle($player2Color);
+}
+
+table {
+  cursor: pointer;
+  margin: $spacing-xlarge;
+  border-collapse: collapse;
+  font-size: $font-xxlarge;
+  text-align: center;
+  vertical-align: middle;
+  width: 30%;
+  tr {
+    td {
+      height: 100px;
+      border: 5px solid $color3;
+      width: 33%;
+      &::after {
+        clear: both;
+        content: '';
+        display: table;
+      }
+      &:first-of-type {
+        border-left-color: transparent;
+      }
+      &:nth-of-type(3) {
+        border-right-color: transparent;
+      }
+    }
+    &:first-of-type {
+      td {
+        border-top-color: transparent;
+        padding-top: $spacing-small;
+      }
+    }
+    &:nth-of-type(3) {
+      td {
+        border-bottom-color: transparent;
+        padding-bottom: $spacing-small;
+      }
+    }
+  }
+}

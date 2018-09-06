@@ -17,15 +17,4 @@ html {
   color: #f4faff;
 }
 
-.navBar {
-  width: 100%;
-  box-shadow: 0 5px 0 0 #f4faff;
-  height: 60px;
-  text-align: center;
-  color: #f4faff;
-  background-color: #08090a;
-  padding-top: 12px;
-  margin-bottom: 8px;
-}
-
-/*# sourceMappingURL=navbar.css.map */
+/*# sourceMappingURL=statusBar.css.map */

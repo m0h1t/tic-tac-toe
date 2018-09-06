@@ -1,6 +1,7 @@
-@mixin vendor($property, $value...) {
-  -webkit-#{$property}: $value;
-  -moz-#{$property}: $value;
-  -ms-#{$property}: $value;
-  #{$property}: $value;
+@import 'base.settings';
+
+@mixin playerGridStyle($color) {
+  color: $color;
+  font-family: $grid-font-family;
+  font-size: $font-xxlarge;
 }

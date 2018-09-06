@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+.board {
+  font-family: "Permanent Marker", cursive;
+}
+
+/* Coolors Exported Palette - coolors.co/5dfdcb-7cc6fe-f4faff-8789c0-08090a */
+/* HSL */
+/* RGB */
+html {
+  background: #08090a;
+  color: #f4faff;
+}
+
+.player1GridBlock {
+  color: #5dfdcb;
+  font-family: "Permanent Marker", cursive;
+  font-size: 48px;
+}
+
+.player2GridBlock {
+  color: #7cc6fe;
+  font-family: "Permanent Marker", cursive;
+  font-size: 48px;
+}
+
+table {
+  cursor: pointer;
+  margin: 48px;
+  border-collapse: collapse;
+  font-size: 48px;
+  text-align: center;
+  vertical-align: middle;
+  width: 30%;
+}
+table tr td {
+  height: 100px;
+  border: 5px solid #f4faff;
+  width: 33%;
+}
+table tr td::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+table tr td:first-of-type {
+  border-left-color: transparent;
+}
+table tr td:nth-of-type(3) {
+  border-right-color: transparent;
+}
+table tr:first-of-type td {
+  border-top-color: transparent;
+  padding-top: 12px;
+}
+table tr:nth-of-type(3) td {
+  border-bottom-color: transparent;
+  padding-bottom: 12px;
+}
+
+/*# sourceMappingURL=grid.css.map */

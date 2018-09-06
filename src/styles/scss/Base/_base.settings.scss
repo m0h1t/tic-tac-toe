@@ -1,6 +1,10 @@
 //
 //   Base Settings
 //
+//
+//   Cabin & Permanent Marker Fonts from Google Fonts
+//
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker');
 
 // High-level settings for the entire site
 $base-spacing-unit: 24px;
@@ -22,6 +26,10 @@ $font-normal: $base-font-size;
 $font-large: $base-font-size * 1.5;
 $font-xlarge: $base-font-size * 2;
 $font-xxlarge: $base-font-size * 3;
+
+// App Fonts
+$body-font-family: 'Cabin', sans-serif;
+$grid-font-family: 'Permanent Marker', cursive;
 
 // Font weights
 $font-weight-light: 300;

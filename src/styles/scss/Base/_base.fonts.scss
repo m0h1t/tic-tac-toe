@@ -1,12 +1,9 @@
-//
-//   Cabin Font from Google Fonts
-//
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker');
+@import 'base.settings';
 
 body {
-  font-family: 'Cabin', sans-serif;
+  font-family: $body-font-family;
 }
 
 .board {
-  font-family: 'Permanent Marker', cursive;
+  font-family: $grid-font-family;
 }
