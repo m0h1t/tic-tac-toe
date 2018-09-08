@@ -22,4 +22,10 @@ html {
   color: #f4faff;
 }
 
+.newGame {
+  margin-top: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=App.css.map */

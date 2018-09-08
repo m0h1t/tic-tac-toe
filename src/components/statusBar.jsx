@@ -1,18 +1,37 @@
 import React, { Component } from 'react';
+import '../styles/css/statusBar.css';
 
 export default class StatusBar extends Component {
+  _getStatusClass = player => {
+    debugger;
+    let classes = 'col';
+    classes +=
+      this.props.currentTurn === player ? ' currentTurn' : ' inactivePlayer';
+    return classes;
+  };
+
+  _getResult = () => {
+    const { winner } = this.props;
+    if (winner === '') {
+      return winner;
+    } else if (winner === 'Tie') {
+      return 'Tie';
+    } else {
+      return 'Winner: ' + winner;
+    }
+  };
+
   render() {
     const { X, tie, O } = this.props.score;
-    const { currentTurn } = this.props;
     return (
-      <div className="container">
+      <div className="container score">
         <div className="row">
-          <div className="col-md-4">X: {X}</div>
-          <div className="col-md-4">Tie: {tie}</div>
-          <div className="col-md-4">O: {O}</div>
+          <div className={this._getStatusClass('X')}>Player 1 (X): {X}</div>
+          <div className="col inactivePlayer">Tie: {tie}</div>
+          <div className={this._getStatusClass('O')}>Player 2 (O): {O}</div>
         </div>
-        <div className="row">
-          <div className="col-md-12 center pt-5">Turn: {currentTurn}</div>
+        <div className="row mt-4">
+          <div className="col">{this._getResult()}</div>
         </div>
       </div>
     );

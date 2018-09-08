@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import NavBar from './navBar';
 import Grid from './grid';
+import StatusBar from './statusBar';
+import '../styles/css/App.css';
 
 export default class Main extends Component {
   state = {
     board: [],
     currentTurn: 'X',
     gameInProgress: true,
-    score: { X: 0, O: 0, tie: 0 }
+    score: { X: 0, O: 0, tie: 0 },
+    winner: ''
   };
 
   winningNumbers = [
@@ -36,21 +39,29 @@ export default class Main extends Component {
   };
 
   _handleClick = block => {
-    const { board, currentTurn, score } = this.state;
-    var { gameInProgress } = this.state;
+    var { score, board, gameInProgress, currentTurn, winner } = this.state;
     if (block.value === '' && gameInProgress) {
       const i = board.indexOf(block);
       board[i].value = currentTurn;
       if (this._hasPlayerWon()) {
+        winner = currentTurn;
         score[currentTurn]++;
         gameInProgress = false;
+      } else if (this._isGridFull()) {
+        winner = 'Tie';
+        score['tie']++;
+        gameInProgress = false;
+      } else {
+        currentTurn = currentTurn === 'X' ? 'O' : 'X';
       }
-      this.setState({
-        board,
-        currentTurn: currentTurn === 'X' ? 'O' : 'X',
-        gameInProgress
-      });
     }
+    this.setState({
+      board,
+      currentTurn,
+      gameInProgress,
+      score,
+      winner
+    });
   };
 
   _addBlock = blockId => {
@@ -62,8 +73,9 @@ export default class Main extends Component {
   };
 
   _resetBlock = () => {
-    this.setState({ block: [] });
-    for (let i = 0; i < 9; i++) this._addBlock(i);
+    var block = [];
+    for (let i = 0; i < 9; i++) block.push(this._emptyBlock(i));
+    return block;
   };
 
   _isGridFull = () => {
@@ -72,25 +84,31 @@ export default class Main extends Component {
   };
 
   _resetState() {
-    this._resetBlock();
     this.setState({
+      board: this._resetBlock(),
       gameInProgress: true,
-      currentTurn: 'X'
+      currentTurn: 'X',
+      winner: ''
     });
-    console.log(this.state.board);
   }
 
   componentWillMount() {
-    this._resetBlock();
+    this.state.board = this._resetBlock();
   }
 
   render() {
-    const { board } = this.state;
+    const { score, board, currentTurn, winner } = this.state;
     return (
       <div className="theme">
         <NavBar />
         <center>
           <Grid board={board} onClick={this._handleClick} />
+          <StatusBar score={score} currentTurn={currentTurn} winner={winner} />
+          {this.state.gameInProgress === false ? (
+            <button className="newGame" onClick={this._resetState.bind(this)}>
+              New Game
+            </button>
+          ) : null}
         </center>
       </div>
     );

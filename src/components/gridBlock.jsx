@@ -5,9 +5,9 @@ export default class GridBlock extends Component {
   _getBlockClass = () => {
     const { value } = this.props.block;
     if (value === 'X') {
-      return 'player1GridBlock disabled';
+      return 'player1GridBlock';
     } else if (value === 'O') {
-      return 'player2GridBlock disabled';
+      return 'player2GridBlock';
     }
     return '';
   };
@@ -16,7 +16,7 @@ export default class GridBlock extends Component {
     const { value } = this.props.block;
     return (
       <td
-        className={this._getBlockClass()}
+        // className={this._getBlockClass()}
         onClick={this.props.onClick.bind(this, this.props.block)}
       >
         {value}

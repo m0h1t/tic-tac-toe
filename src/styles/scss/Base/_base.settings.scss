@@ -25,15 +25,15 @@ $font-small: $base-font-size / 1.3;
 $font-normal: $base-font-size;
 $font-large: $base-font-size * 1.5;
 $font-xlarge: $base-font-size * 2;
-$font-xxlarge: $base-font-size * 3;
+$font-xxlarge: $base-font-size * 5;
 
 // App Fonts
 $body-font-family: 'Cabin', sans-serif;
 $grid-font-family: 'Permanent Marker', cursive;
 
 // Font weights
-$font-weight-light: 300;
-$font-weight-normal: 400;
+$font-weight-light: 10;
+$font-weight-normal: 300;
 $font-weight-bold: 500;
 $font-weight-black: 700;
 $font-weight-heading: $font-weight-bold;

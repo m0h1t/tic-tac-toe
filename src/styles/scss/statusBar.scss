@@ -1,9 +1,17 @@
 @import 'Base/base';
 
 .score {
-
+  font-family: $body-font-family;
+  font-size: $font-xlarge;
+  width: 60%;
+  padding-bottom: $spacing-xsmall;
 }
 
-.turn {
-    
+.currentTurn {
+  font-weight: $font-weight-normal;
+}
+
+.inactivePlayer {
+  font-weight: $font-weight-light;
+  color: gray;
 }

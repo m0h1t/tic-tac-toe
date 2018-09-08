@@ -20,26 +20,47 @@ html {
 .player1GridBlock {
   color: #5dfdcb;
   font-family: "Permanent Marker", cursive;
-  font-size: 48px;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.5, 1.8, 0.1, 1.1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
 
 .player2GridBlock {
   color: #7cc6fe;
   font-family: "Permanent Marker", cursive;
-  font-size: 48px;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.5, 1.8, 0.1, 1.1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
 
 table {
   cursor: pointer;
   margin: 48px;
   border-collapse: collapse;
-  font-size: 48px;
+  color: #f4faff;
+  font-family: "Permanent Marker", cursive;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.5, 1.8, 0.1, 1.1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  font-size: 80px;
   text-align: center;
   vertical-align: middle;
   width: 30%;
 }
 table tr td {
-  height: 100px;
+  height: 140px;
   border: 5px solid #f4faff;
   width: 33%;
 }
