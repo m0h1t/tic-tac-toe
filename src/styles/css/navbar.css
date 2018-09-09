@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
-@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
-@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
 body {
-  font-family: "Cabin", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .board {
@@ -26,6 +26,7 @@ html {
   background-color: #08090a;
   padding-top: 12px;
   margin-bottom: 8px;
+  font-family: "Permanent Marker", cursive;
 }
 
 /*# sourceMappingURL=navbar.css.map */

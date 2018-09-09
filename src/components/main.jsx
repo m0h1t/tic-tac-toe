@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NavBar from './navBar';
 import Grid from './grid';
 import StatusBar from './statusBar';
-import '../styles/css/App.css';
+import '../styles/css/main.css';
 
 export default class Main extends Component {
   state = {
@@ -64,10 +64,6 @@ export default class Main extends Component {
     });
   };
 
-  _addBlock = blockId => {
-    this.state.board.push(this._emptyBlock(blockId));
-  };
-
   _emptyBlock = blockId => {
     return { id: blockId, value: '', key: Date.now() + blockId };
   };
@@ -93,7 +89,7 @@ export default class Main extends Component {
   }
 
   componentWillMount() {
-    this.state.board = this._resetBlock();
+    this.setState({ board: this._resetBlock() });
   }
 
   render() {

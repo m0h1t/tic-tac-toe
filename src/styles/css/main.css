@@ -17,20 +17,15 @@ html {
   color: #f4faff;
 }
 
-.score {
-  font-family: "Raleway", sans-serif;
-  font-size: 32px;
-  width: 60%;
-  padding-bottom: 8px;
+.theme {
+  background: #08090a;
+  color: #f4faff;
 }
 
-.currentTurn {
-  font-weight: 300;
+.newGame {
+  margin-top: 24px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.inactivePlayer {
-  font-weight: 100;
-  color: gray;
-}
-
-/*# sourceMappingURL=statusBar.css.map */
+/*# sourceMappingURL=main.css.map */

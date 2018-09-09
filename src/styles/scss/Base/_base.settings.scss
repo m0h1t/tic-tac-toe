@@ -1,10 +1,9 @@
 //
 //   Base Settings
 //
-//
-//   Cabin & Permanent Marker Fonts from Google Fonts
-//
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker');
+
+//   Fonts from Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway');
 
 // High-level settings for the entire site
 $base-spacing-unit: 24px;
@@ -28,20 +27,12 @@ $font-xlarge: $base-font-size * 2;
 $font-xxlarge: $base-font-size * 5;
 
 // App Fonts
-$body-font-family: 'Cabin', sans-serif;
-$grid-font-family: 'Permanent Marker', cursive;
+$body-font-family: 'Raleway', sans-serif;
+$heading-font-family: 'Permanent Marker', cursive;
+$grid-font-family: 'Varela Round', sans-serif;
 
 // Font weights
-$font-weight-light: 10;
+$font-weight-light: 100;
 $font-weight-normal: 300;
 $font-weight-bold: 500;
 $font-weight-black: 700;
-$font-weight-heading: $font-weight-bold;
-
-// Header sizes
-$header-size-1: $base-font-size * 2;
-$header-size-2: $base-font-size * 1.5;
-$header-size-3: $base-font-size * 1.35;
-$header-size-4: $base-font-size * 1.2;
-$header-size-5: $base-font-size;
-$header-size-6: $base-font-size * 0.9;

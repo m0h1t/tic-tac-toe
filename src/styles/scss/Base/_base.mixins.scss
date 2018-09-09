@@ -3,11 +3,7 @@
 @mixin playerGridStyle($color) {
   color: $color;
   font-family: $grid-font-family;
-  animation-duration: 0.2s;
-  animation-timing-function: cubic-bezier(0.5, 1.8, 0.1, 1.1);
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
+  font-size: $font-xxlarge;
+  text-align: center;
+  vertical-align: middle;
 }

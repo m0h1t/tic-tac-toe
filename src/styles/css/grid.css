@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
-@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
-@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
 body {
-  font-family: "Cabin", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .board {
@@ -17,46 +17,15 @@ html {
   color: #f4faff;
 }
 
-.player1GridBlock {
-  color: #5dfdcb;
-  font-family: "Permanent Marker", cursive;
-  animation-duration: 0.2s;
-  animation-timing-function: cubic-bezier(0.5, 1.8, 0.1, 1.1);
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-}
-
-.player2GridBlock {
-  color: #7cc6fe;
-  font-family: "Permanent Marker", cursive;
-  animation-duration: 0.2s;
-  animation-timing-function: cubic-bezier(0.5, 1.8, 0.1, 1.1);
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-}
-
 table {
   cursor: pointer;
-  margin: 48px;
-  border-collapse: collapse;
   color: #f4faff;
-  font-family: "Permanent Marker", cursive;
-  animation-duration: 0.2s;
-  animation-timing-function: cubic-bezier(0.5, 1.8, 0.1, 1.1);
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
+  font-family: "Varela Round", sans-serif;
   font-size: 80px;
   text-align: center;
   vertical-align: middle;
+  margin: 48px;
+  border-collapse: collapse;
   width: 30%;
 }
 table tr td {
