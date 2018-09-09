@@ -1,10 +1,12 @@
 @import 'Base/base';
 
-div {
+.navBar {
   width: 100%;
-  box-shadow: 0 4px 0 0 $color3;
-  height: 45px;
+  box-shadow: 0 5px 0 0 $color3;
+  height: 60px;
   text-align: center;
   color: $color3;
   background-color: $color5;
+  padding-top: $spacing-small;
+  margin-bottom: $spacing-xsmall;
 }

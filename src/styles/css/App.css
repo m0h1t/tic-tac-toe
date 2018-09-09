@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker");
 body {
   font-family: "Cabin", sans-serif;
 }
@@ -15,8 +17,15 @@ html {
   color: #f4faff;
 }
 
-body {
-  font-weight: 400;
+.theme {
+  background: #08090a;
+  color: #f4faff;
+}
+
+.newGame {
+  margin-top: 20px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=App.css.map */
