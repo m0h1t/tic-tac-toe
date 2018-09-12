@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import NavBar from './navBar';
 import Grid from './grid';
 import StatusBar from './statusBar';
-import '../styles/css/App.css';
 
 export default class Main extends Component {
   state = {
@@ -38,22 +37,27 @@ export default class Main extends Component {
     }
   };
 
+  _toggleGameOver = player => {
+    debugger;
+    var { gameInProgress, score, winner } = this.state;
+    gameInProgress = false;
+    score[player]++;
+    winner = player;
+    return { gameInProgress, score, winner };
+  };
+
   _handleClick = block => {
     var { score, board, gameInProgress, currentTurn, winner } = this.state;
     if (block.value === '' && gameInProgress) {
       const i = board.indexOf(block);
       board[i].value = currentTurn;
-      if (this._hasPlayerWon()) {
-        winner = currentTurn;
-        score[currentTurn]++;
-        gameInProgress = false;
-      } else if (this._isGridFull()) {
-        winner = 'Tie';
-        score['tie']++;
-        gameInProgress = false;
-      } else {
-        currentTurn = currentTurn === 'X' ? 'O' : 'X';
-      }
+      this._hasPlayerWon()
+        ? ({ gameInProgress, score, winner } = this._toggleGameOver(
+            currentTurn
+          ))
+        : this._isGridFull()
+          ? ({ gameInProgress, score, winner } = this._toggleGameOver('tie'))
+          : (currentTurn = currentTurn === 'X' ? 'O' : 'X');
     }
     this.setState({
       board,
@@ -62,10 +66,6 @@ export default class Main extends Component {
       score,
       winner
     });
-  };
-
-  _addBlock = blockId => {
-    this.state.board.push(this._emptyBlock(blockId));
   };
 
   _emptyBlock = blockId => {
@@ -93,7 +93,7 @@ export default class Main extends Component {
   }
 
   componentWillMount() {
-    this.state.board = this._resetBlock();
+    this.setState({ board: this._resetBlock() });
   }
 
   render() {

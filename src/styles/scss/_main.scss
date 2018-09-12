@@ -1,0 +1,12 @@
+@import 'Base/base';
+
+.theme {
+  background: $color5;
+  color: $color3;
+}
+
+.newGame {
+  margin-top: $spacing-normal;
+  font-size: $font-large;
+  cursor: pointer;
+}

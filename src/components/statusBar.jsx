@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import '../styles/css/statusBar.css';
 
 export default class StatusBar extends Component {
   _getStatusClass = player => {
-    debugger;
     let classes = 'col';
     classes +=
       this.props.currentTurn === player ? ' currentTurn' : ' inactivePlayer';
@@ -12,13 +10,11 @@ export default class StatusBar extends Component {
 
   _getResult = () => {
     const { winner } = this.props;
-    if (winner === '') {
-      return winner;
-    } else if (winner === 'Tie') {
-      return 'Tie';
-    } else {
-      return 'Winner: ' + winner;
-    }
+    return winner === ''
+      ? winner
+      : winner === 'Tie'
+        ? 'Tie'
+        : 'Winner: ' + winner;
   };
 
   render() {

@@ -1,12 +1,4 @@
-@import 'Base/base';
-
-.theme {
-  background: $color5;
-  color: $color3;
-}
-
-.newGame {
-  margin-top: 20px;
-  font-size: $font-large;
-  cursor: pointer;
-}
+@import 'grid';
+@import 'main';
+@import 'navbar';
+@import 'statusBar';

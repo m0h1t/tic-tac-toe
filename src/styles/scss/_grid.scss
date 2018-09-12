@@ -1,21 +1,10 @@
 @import 'Base/base';
 
-.player1GridBlock {
-  @include playerGridStyle($player1Color);
-}
-
-.player2GridBlock {
-  @include playerGridStyle($player2Color);
-}
-
 table {
   cursor: pointer;
+  @include playerGridStyle($color3);
   margin: $spacing-xlarge;
   border-collapse: collapse;
-  @include playerGridStyle($color3);
-  font-size: $font-xxlarge;
-  text-align: center;
-  vertical-align: middle;
   width: 30%;
   tr {
     td {
