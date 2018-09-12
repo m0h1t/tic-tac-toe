@@ -12,7 +12,7 @@ export default class StatusBar extends Component {
     const { winner } = this.props;
     return winner === ''
       ? winner
-      : winner === 'Tie'
+      : winner === 'tie'
         ? 'Tie'
         : 'Winner: ' + winner;
   };
