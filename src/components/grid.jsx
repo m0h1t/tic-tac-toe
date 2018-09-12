@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../styles/css/grid.css';
 import GridBlock from './gridBlock';
 
 export default class Grid extends Component {
