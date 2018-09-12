@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600|Permanent+Marker|Varela+Round|Raleway");
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.board {
+  font-family: "Permanent Marker", cursive;
+}
+
+/* Coolors Exported Palette - coolors.co/5dfdcb-7cc6fe-f4faff-8789c0-08090a */
+/* HSL */
+/* RGB */
+html {
+  background: #08090a;
+  color: #f4faff;
+}
+
+table {
+  cursor: pointer;
+  color: #f4faff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 48px;
+  border-collapse: collapse;
+  width: 30%;
+}
+table tr td {
+  height: 140px;
+  border: 5px solid #f4faff;
+  width: 33%;
+}
+table tr td::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+table tr td:first-of-type {
+  border-left-color: transparent;
+}
+table tr td:nth-of-type(3) {
+  border-right-color: transparent;
+}
+table tr:first-of-type td {
+  border-top-color: transparent;
+  padding-top: 12px;
+}
+table tr:nth-of-type(3) td {
+  border-bottom-color: transparent;
+  padding-bottom: 12px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.board {
+  font-family: "Permanent Marker", cursive;
+}
+
+/* Coolors Exported Palette - coolors.co/5dfdcb-7cc6fe-f4faff-8789c0-08090a */
+/* HSL */
+/* RGB */
+html {
+  background: #08090a;
+  color: #f4faff;
+}
+
+.theme {
+  background: #08090a;
+  color: #f4faff;
+}
+
+.newGame {
+  margin-top: 24px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.board {
+  font-family: "Permanent Marker", cursive;
+}
+
+/* Coolors Exported Palette - coolors.co/5dfdcb-7cc6fe-f4faff-8789c0-08090a */
+/* HSL */
+/* RGB */
+html {
+  background: #08090a;
+  color: #f4faff;
+}
+
+.navBar {
+  width: 100%;
+  box-shadow: 0 5px 0 0 #f4faff;
+  height: 60px;
+  text-align: center;
+  color: #f4faff;
+  background-color: #08090a;
+  padding-top: 12px;
+  margin-bottom: 8px;
+  font-family: "Permanent Marker", cursive;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.board {
+  font-family: "Permanent Marker", cursive;
+}
+
+/* Coolors Exported Palette - coolors.co/5dfdcb-7cc6fe-f4faff-8789c0-08090a */
+/* HSL */
+/* RGB */
+html {
+  background: #08090a;
+  color: #f4faff;
+}
+
+.score {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  width: 60%;
+  padding-bottom: 8px;
+}
+
+.currentTurn {
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.inactivePlayer {
+  font-weight: 100;
+  color: gray;
+}
+
+/*# sourceMappingURL=App.css.map */
