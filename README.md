@@ -47,3 +47,4 @@ $ npm install
 ### Deployment
 
 - Create a build using `npm build` command and deploy the build
+- You can find the game [here](https://still-cove-45786.herokuapp.com)
